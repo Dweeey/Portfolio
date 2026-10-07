@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Andrei G. Mansueto, a Computer Engineering graduate focused on embedded systems, app development, and technical problem-solving."
+    />
+    <title>Andrei G. Mansueto | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Home">
+          <img src="Documents/1x1.jpeg" alt="Andrei Mansueto portrait" />
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="button button-small button-ghost fancy-button desktop-cta">
+          <span class="button-text">Let’s talk</span>
+          <span class="button-shine"></span>
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Computer Engineering graduate</p>
+            <h1>I build systems and apps that solve real problems.</h1>
+            <p class="lead">
+              I’m Andrei G. Mansueto, a Computer Engineering graduate with hands-on experience in embedded systems,
+              hardware and software troubleshooting, system testing, and application development.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="button button-ghost fancy-button">
+                <span class="button-text">View my work</span>
+                <span class="button-shine"></span>
+              </a>
+              <a href="#about" class="button button-ghost fancy-button">
+                <span class="button-text">About me</span>
+                <span class="button-shine"></span>
+              </a>
+              <a href="Documents/CV - Andrei.pdf" class="button button-ghost fancy-button" download>
+                <span class="button-text">Download CV</span>
+                <span class="button-shine"></span>
+              </a>
+            </div>
+            <ul class="hero-meta" aria-label="Key metrics">
+              <li><strong>2026</strong><span>Graduation year</span></li>
+              <li><strong>4</strong><span>Key projects</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="Portfolio preview">
+            <div class="profile-card">
+              <img
+                src="Documents/NPC%20t_19257.jpeg"
+                alt="Andrei Mansueto portrait"
+                class="profile-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-card">
+            <p class="eyebrow">About</p>
+            <h2>I combine engineering thinking with practical software development.</h2>
+            <p>
+              I’m a Computer Engineering graduate with hands-on experience in embedded systems,
+              real-time data applications, hardware and software troubleshooting, and database-backed
+              software. I enjoy turning technical complexity into solutions that are reliable,
+              efficient, and easy to use in real-world situations.
+            </p>
+            <p>
+              From diagnosing issues across devices and systems to building applications with sensor
+              integration, data handling, and process automation, I value clear execution,
+              practical problem-solving, and thoughtful engineering decisions. I like working at the
+              intersection of technology and meaningful everyday use.
+            </p>
+            <p>
+              My work focuses on creating systems that are not only functional, but also stable,
+              maintainable, and useful to the people relying on them every day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="projects">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects and systems</h2>
+          </div>
+          <div class="filters" aria-label="Project filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="mobile">Mobile</button>
+            <button class="filter" data-filter="web">Web</button>
+            <button class="filter" data-filter="embedded">Embedded</button>
+          </div>
+        </div>
+
+        <div class="container projects-grid" id="project-grid"></div>
+      </section>
+
+
+      <section class="skills">
+        <div class="container">
+          <div class="section-heading skills-heading">
+            <div>
+              <p class="eyebrow">Skills</p>
+              <h2>Core strengths and technical focus</h2>
+            </div>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span>Engineering</span>
+              <strong>Hardware and software troubleshooting</strong>
+              <p>Diagnosing issues across systems, devices, and real-world workflows with a practical, problem-first mindset.</p>
+            </article>
+            <article class="skill-card">
+              <span>Embedded</span>
+              <strong>Microcontrollers and sensor systems</strong>
+              <p>Building and testing embedded solutions with real-time data handling and reliable system integration.</p>
+            </article>
+            <article class="skill-card">
+              <span>Programming</span>
+              <strong>Python, Java, Kotlin, SQL, Firebase</strong>
+              <p>Developing applications and back-end logic for data-driven products and everyday tools.</p>
+            </article>
+            <article class="skill-card">
+              <span>Tools</span>
+              <strong>GitHub, Office, networking, electronics</strong>
+              <p>Working across technical documentation, project setup, collaboration, and hands-on system support.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="certifications">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Credentials</p>
+              <h2>Certifications &amp; badges</h2>
+            </div>
+          </div>
+
+          <div class="cert-grid">
+            <a class="cert-card cert-card-link" href="#" data-cert-image="Documents/SQL Associate.jpg" data-cert-title="SQL Associate - DataCamp" aria-label="Open SQL Associate certificate image">
+              <div class="cert-image-wrap">
+                <img src="Documents/SQL Associate.jpg" alt="SQL Associate - DataCamp certificate" class="cert-image" />
+              </div>
+              <div class="cert-head">
+                <span class="cert-badge">SQL</span>
+                <span class="cert-year">Sept 2026</span>
+              </div>
+              <h3>SQL Associate - DataCamp</h3>
+            </a>
+
+            <div class="cert-card cert-card-disabled" aria-disabled="true">
+              <div class="cert-no-image">Certificate preview unavailable</div>
+              <div class="cert-head">
+                <span class="cert-badge">IT</span>
+                <span class="cert-year">Sept 2026</span>
+              </div>
+              <h3>Information Technology Fundamentals - IBM Skill Build</h3>
+            </div>
+
+            <div class="cert-card cert-card-disabled" aria-disabled="true">
+              <div class="cert-no-image">Certificate preview unavailable</div>
+              <div class="cert-head">
+                <span class="cert-badge">Web</span>
+                <span class="cert-year">Sept 2026</span>
+              </div>
+              <h3>Web Development Fundamentals - IBM Skill Build</h3>
+            </div>
+
+            <a class="cert-card cert-card-link" href="#" data-cert-image="Documents/Networking Basics Certificate.jpg" data-cert-title="Networking Basics - Cisco Networking Academy" aria-label="Open Networking Basics certificate image">
+              <div class="cert-image-wrap">
+                <img src="Documents/Networking Basics Certificate.jpg" alt="Networking Basics certificate" class="cert-image" />
+              </div>
+              <div class="cert-head">
+                <span class="cert-badge">Networking</span>
+                <span class="cert-year">Jan 2026</span>
+              </div>
+              <h3>Networking Basics - Cisco Networking Academy</h3>
+            </a>
+
+            <a class="cert-card cert-card-link" href="#" data-cert-image="Documents/Computer Hardware Basics Certificate.jpg" data-cert-title="Computer Hardware Basics - Cisco Networking Academy" aria-label="Open Computer Hardware Basics certificate image">
+              <div class="cert-image-wrap">
+                <img src="Documents/Computer Hardware Basics Certificate.jpg" alt="Computer Hardware Basics certificate" class="cert-image" />
+              </div>
+              <div class="cert-head">
+                <span class="cert-badge">Hardware</span>
+                <span class="cert-year">Jan 2026</span>
+              </div>
+              <h3>Computer Hardware Basics - Cisco Networking Academy</h3>
+            </a>
+          </div>
+
+          <div class="badge-strip" aria-label="Technology badges">
+            <span>SQL</span>
+            <span>Firebase</span>
+            <span>Hardware</span>
+            <span>Systems</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="process">
+        <div class="container">
+          <p class="eyebrow">How I work</p>
+          <h2>From issue to solution</h2>
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <h3>Diagnose</h3>
+              <p>I identify the root issue, whether it is technical, system-related, or user-facing.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Design</h3>
+              <p>I define the architecture, workflow, and technical approach that supports the goal.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Build</h3>
+              <p>I develop and test the solution, from software logic to integration with hardware or data systems.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Improve</h3>
+              <p>I refine the system based on performance, reliability, and real-world feedback.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <p class="eyebrow">Let’s connect</p>
+          <h2>Open to engineering, software, and product opportunities.</h2>
+        </div>
+        <div class="footer-actions">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrei.mansueto17@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Andrei%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noreferrer" class="button contact-link">
+            <span class="contact-icon">✉</span>
+            <span>andrei.mansueto17@gmail.com</span>
+          </a>
+          <a href="tel:+639939228497" class="button button-ghost contact-link">
+            <span class="contact-icon">☎</span>
+            <span>+63 993 922 8497</span>
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Andrei G. Mansueto</p>
+      </div>
+    </footer>
+
+    <button type="button" class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+      ↑
+    </button>
+
+    <div class="project-modal hidden" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close project details">
+          ×
+        </button>
+        <div class="modal-body">
+          <div class="modal-badges">
+            <span class="modal-tag" id="modal-tag">Project</span>
+            <a id="modal-github" class="modal-tag modal-github hidden" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+          <h3 id="modal-title">Project title</h3>
+          <p id="modal-summary"></p>
+          <div id="modal-video-wrap" class="modal-video-wrap hidden"></div>
+          <ul id="modal-points" class="modal-points"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-modal hidden" id="cert-modal" aria-hidden="true">
+      <div class="cert-modal-backdrop" data-cert-close="true"></div>
+      <div class="cert-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+        <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Close certificate preview">
+          ×
+        </button>
+        <div class="cert-modal-body">
+          <h3 id="cert-modal-title">Certificate</h3>
+          <img id="cert-modal-image" src="" alt="Certificate preview" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
