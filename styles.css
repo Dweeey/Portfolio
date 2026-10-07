@@ -288,6 +288,18 @@ h1 {
   .hero-actions {
     flex-wrap: wrap;
   }
+
+  .fancy-button {
+    max-width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .fancy-button .button-text {
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+  }
 }
 
 .hero-meta {
@@ -316,6 +328,14 @@ h1 {
   min-height: 480px;
   display: grid;
   place-items: center;
+}
+
+.mobile-panel {
+  display: none;
+}
+
+.desktop-panel {
+  display: grid;
 }
 
 .profile-card {
@@ -436,6 +456,7 @@ h1 {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  overflow: hidden;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
 }
 
@@ -1158,16 +1179,30 @@ body.modal-open {
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.5fr) minmax(160px, 0.7fr);
+    gap: 1.5rem;
+  }
+
+  .hero-panel {
+    min-height: 360px;
+  }
+
+  .profile-card {
+    width: min(260px, 34vw);
+  }
 }
 
 @media (max-width: 900px) {
-  .hero-grid,
   .about-grid {
     grid-template-columns: 1fr;
   }
 
   .projects-grid,
-  .process-grid {
+  .process-grid,
+  .skills-grid,
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1227,6 +1262,18 @@ body.modal-open {
     padding-top: 3rem;
   }
 
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(120px, 0.55fr);
+  }
+
+  .hero-panel {
+    min-height: 260px;
+  }
+
+  .profile-card {
+    width: min(220px, 30vw);
+  }
+
   h1 {
     font-size: clamp(2.5rem, 12vw, 4rem);
   }
@@ -1261,6 +1308,61 @@ body.modal-open {
     flex-direction: column;
   }
 
+  .hero-actions {
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 0;
+  }
+
+  h1 {
+    margin-bottom: 0.6rem;
+  }
+
+  .lead {
+    margin-bottom: 0;
+    font-size: 0.97rem;
+    line-height: 1.6;
+  }
+
+  .mobile-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    margin-top: 0.25rem;
+  }
+
+  .desktop-panel {
+    display: none;
+  }
+
+  .profile-card {
+    width: min(180px, 48vw);
+    aspect-ratio: 1;
+    border-radius: 22px;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .hero-meta {
+    margin-top: 1.25rem;
+    gap: 1rem 1.25rem;
+  }
+
   .project-content {
     padding: 1.05rem;
   }
@@ -1268,11 +1370,25 @@ body.modal-open {
   .project-thumb {
     min-height: 150px;
     padding: 0.85rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .project-thumb::before {
+    right: 18px;
+    bottom: 18px;
+    transform: none;
+    width: 92px;
+    height: 92px;
   }
 
   .project-logo {
     width: 92px;
     height: 92px;
+    right: 18px;
+    bottom: 18px;
+    transform: none;
   }
 
   .project-tag {
